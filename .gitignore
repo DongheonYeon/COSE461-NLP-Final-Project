@@ -1,0 +1,5 @@
+.dump/
+.dump2/
+dataset/
+output/
+model/
