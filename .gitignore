@@ -1,5 +1,6 @@
 .dump/
 .dump2/
-dataset/
-output/
+dataset/example_data/
+dataset/raw/
+output/dump/
 model/
