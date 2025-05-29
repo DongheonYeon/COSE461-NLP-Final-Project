@@ -40,8 +40,9 @@ from loop_utils import main_loop # type: ignore
 
 # from transformers.utils import logging
 # logging.set_verbosity_info()
-test_file_path = '/data/ydh/nlp/dataset/test.jsonl'
-# test_file_path = '/data/ydh/nlp/dataset/test_one.jsonl'
+# test_file_path = '/data/ydh/nlp/dataset/test.jsonl'
+test_file_path = '/data/ydh/nlp/dataset/acc_100.jsonl'
+
 
 def generate_step_vllm(args, llm, prompt):
     sampling_params = SamplingParams(
