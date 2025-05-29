@@ -2,8 +2,8 @@
 # coding: utf-8
 import argparse
 import os
-tensor_parallel_size=2
-os.environ["CUDA_VISIBLE_DEVICES"] = "3, 4, 5, 6"
+tensor_parallel_size=1
+os.environ["CUDA_VISIBLE_DEVICES"] = "1, 5, 6"
 # os.environ["TRANSFORMERS_CACHE"] = "/data/ydh/nlp/model/huggingface_model"
 os.environ["VLLM_CACHE_ROOT"] = "/data/ydh/nlp/model/vllm_cache"
 os.environ["HF_HOME"] = "/data/ydh/nlp/model/huggingface_model"
@@ -40,8 +40,8 @@ from loop_utils import main_loop # type: ignore
 
 # from transformers.utils import logging
 # logging.set_verbosity_info()
-test_file_path = '/data/ydh/nlp/dataset/test.jsonl'
-# test_file_path = '/data/ydh/nlp/dataset/test_one.jsonl'
+# test_file_path = '/data/ydh/nlp/dataset/test.jsonl'
+test_file_path = '/data/ydh/nlp/dataset/acc_100.jsonl'
 
 def generate_step_vllm(args, llm, prompt):
     sampling_params = SamplingParams(
