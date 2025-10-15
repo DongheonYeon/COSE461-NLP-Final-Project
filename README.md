@@ -1,4 +1,4 @@
-## KECE251R-NLP-Final-Project
+## COSE461-NLP-Final-Project
 
 ![Abstract](pdf/page1.png)
 
